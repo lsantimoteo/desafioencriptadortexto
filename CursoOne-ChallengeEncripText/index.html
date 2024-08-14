@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./stiles/style.css">
+    
+</head>
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <p>Encriptador de textro desarrollado por Lucas S</p>
+            <img class="encriptador__imagen" src="./assets/ClavesEspartanos.JPG" alt="imagen del encriptador">
+        </nav>
+    </header>
+    <main class="encriptador">
+        <section class="encriptador__contenido">
+        <h1 class="encriptador__contenido__titulo">
+            <textarea id="textoUsuario" rows="10" cols="80" placeholder="Escriba aqui el texto que quisiera encriptar o desencriptar" onfocus="limpiaFormulario()"></textarea>
+            
+            <button onclick="encriptar()">Encriptar Texto</button>
+            <button onclick="desencriptar()">Desencriptar Texto</button>
+
+            <button onclick="copiar()">Copiar Texto</button>
+
+            <p id="textoUsuarioEncrip"></p>
+            <p id="textoUsuarioDesencrip"></p>
+
+            <script src="app.js"></script>
+
+        </h1>
+            <p class="encriptador__contenido__nota">
+                Nota: solo se podran usar letras minusculas y sin acentos
+                <img class="encriptador__imagen" src="./assets/HackerCartoon.JPG" alt="imagen del hacker">
+            </p>
+            
+        </section>
+        
+    </main>
+    <footer class="footer">
+        
+    </footer>
+</body>
+</html>
